@@ -1,0 +1,23 @@
+body:before {
+    display: block;
+    content: "";
+    height: 60px;
+}
+
+.contacts {
+    list-style-type: none;
+}
+
+#fakemap {
+    display: block;
+    zoom: 155%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: red;
+}
+@media (min-width: 768px) {
+    .news-input {
+        width: 50%;;
+    }
+}

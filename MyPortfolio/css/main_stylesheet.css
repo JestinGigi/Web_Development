@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    color: white;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvKZVBbDVMvf4_9DPqTiHgdA669oKw6b0EC_aMW8IM5GFLyOUZqOvwehweI1q1uzIu2Bo&usqp=CAU");
+    background-size: cover;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.navbar a{
+    display: inline-block;
+    font-size: 25px;   
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover{
+    color: #14EB68;
+    border-color: greenyellow;
+    box-shadow: inset;
+}
+
+.home{
+    position: absolute;
+    width: 100%;
+    justify-content: space-between;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+}
+
+.home-content p {
+    font-size: 20px;
+}
+
+.home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border-radius: 50%;
+    border: 2px solid ;
+    color: #14EB68;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+}
+
+.home-sci a:hover {
+    background: #14EB68;
+    color: #001b29;
+    box-shadow: 0 0 20px #14EB68;
+}
+
+.btn-about {
+    background-color: #14EB68;
+    font-weight: 550;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.btn-about:hover {
+    box-shadow: 0 0 20px #14EB68;
+}
+
+.myphoto {
+    display: block;
+    margin: auto;
+    max-height: 60vh;
+    border-radius: 50%;
+    border-style: groove;
+    border-color: #14EB68;
+    box-shadow: 0 0 40px #14EB68;
+    
+}
+
+.text{
+    color: #14EB68;
+}
+
+ul {
+    font-size: 20px;
+    padding-left: 20px;
+}

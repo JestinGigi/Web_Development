@@ -1,0 +1,63 @@
+<!-- Form validations
+    1. First Name
+    2. Last Name
+    3. Email
+    4. Contact No.(India) 
+    5. Password
+-->
+
+<!doctype html>
+<html>
+    <head>
+        <meta name="author" content="Jestin Gigi">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width:device-width,initial-scale:1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&family=Roboto+Mono&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="js_valid.css">
+    </head>
+    <body>
+        <section class="forms m-3">  <!--Form-->
+            <div class="container">
+                <div class="hd shadow-lg bg-gradient bg-dark text-light text-center p-2 mb-3">
+                    <h1 class="head1">Form Filling with validation checks</h1>
+                </div>
+                <form onsubmit="validateForm()" name="signUp"> <!--Fields Here-->
+                    <div class="mb-3"> 
+                        <label for="firstName" class="form-label">*First Name</label>
+                        <input type="name" class="form-control" id="firstName" name="fName">
+                      </div>
+                      <div class="mb-3">
+                        <label for="lastName" class="form-label">*Last Name</label>
+                        <input type="name" class="form-control" id="lastName" name="lName">
+                      </div>
+                    <div class="mb-3">
+                      <label for="Email1" class="form-label">*Email address</label>
+                      <input type="email1" class="form-control" id="Email1" aria-describedby="emailNotice" name="email">
+                      <div id="emailNotice" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="contact" class="form-label">Contact</label>
+                        <input type="contact" onsubmit="" class="form-control" id="contact" name="contact">
+                      </div>
+                    <div class="mb-3">
+                      <label for="passwd" class="form-label">*Password</label>
+                      <input type="passwd" class="form-control" id="passwd" name="pass">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="Check" required>
+                      <label class="form-check-label" for="Check">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-dark ">Submit</button>
+                  </form>
+            </div>
+        </section>
+        <section class="footer mt-5 bg-gradient bg-dark text-center  text-light">
+            <p class="footer p-2 m-0">© 2022 Copyright</p>
+        </section>
+        <script src="js_valid.js"></script>
+    </body>
+</html>
